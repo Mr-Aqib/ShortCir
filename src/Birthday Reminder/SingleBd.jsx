@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SingleBd = ({id,name,image,years}) => {
+const SingleBd = ({id,name,image,years,remove}) => {
   return (
     <>
     <div className="my-2 d-flex justify-content-between shadow p-2">
@@ -12,7 +12,7 @@ const SingleBd = ({id,name,image,years}) => {
                 
             </div>
         </div>
-        <button className="align-self-center btn btn-danger">
+        <button onClick={()=>remove(id)} className="align-self-center btn btn-danger">
             Remove
         </button>
     </div>
