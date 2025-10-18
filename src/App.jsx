@@ -1,16 +1,18 @@
 import React from 'react'
-import Event from './Events/Event'
-import Us from './Hooks/Us'
-import Counter from './Counterapp/Counter'
-import ShortCitcuit from './ShortCircuits/ShortCircuit'
+import Birthday from './Birthday Reminder/Birthday'
+// import Event from './Events/Event'
+// import Us from './Hooks/Us'
+// import Counter from './Counterapp/Counter'
+// import ShortCitcuit from './ShortCircuits/ShortCircuit'
 
 const App = () => {
   return (
     <>
-    <Event/>
+    {/* <Event/>
     <Us/>
     <Counter/>
-    <ShortCitcuit/>
+    <ShortCitcuit/> */}
+    <Birthday/>
      </>
   )
 }
