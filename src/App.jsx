@@ -1,5 +1,6 @@
 import React from 'react'
 import Useeffect from './Hooks/Useeffect'
+import Apifetch from './Api Req/Apifetch'
 // import Birthday from './Birthday Reminder/Birthday'
 // import Event from './Events/Event'
 // import Us from './Hooks/Us'
@@ -14,7 +15,8 @@ const App = () => {
     <Counter/>
     <ShortCitcuit/> */}
     {/* <Birthday/> */}
-    <Useeffect/>
+    {/* <Useeffect/> */}
+    <Apifetch/>
      </>
   )
 }
