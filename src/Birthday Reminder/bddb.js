@@ -18,7 +18,7 @@ export const bddata =[
         years:24,
     },
     {
-        id :11,
+        id :13,
         image:"https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-sulimansallehi-1704488.jpg&fm=jpg",
         name:'Ellen',
         years:23,
