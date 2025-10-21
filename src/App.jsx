@@ -10,6 +10,7 @@ import Us from './Hooks/Us'
 import Counter from './Counterapp/Counter'
 import ShortCitcuit from './ShortCircuits/ShortCircuit'
 import Todo from './TodoList/Todo';
+import TextGenerator from './TextGenerator/TextGenerator';
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
     <Useeffect/> 
     <Apifetch/>
     <ControlledInputs/> */}
-    <Todo/>
+    {/* <Todo/> */}
+    <TextGenerator/>
      </>
   )
 }
