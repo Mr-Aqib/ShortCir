@@ -11,6 +11,7 @@ import Counter from './Counterapp/Counter'
 import ShortCitcuit from './ShortCircuits/ShortCircuit'
 import Todo from './TodoList/Todo';
 import TextGenerator from './TextGenerator/TextGenerator';
+import ColorGenerator from './Colorgenerator/ColorGenerator';
 
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
     <Apifetch/>
     <ControlledInputs/> */}
     {/* <Todo/> */}
-    <TextGenerator/>
+    {/* <TextGenerator/> */}
+    <ColorGenerator/>
      </>
   )
 }
