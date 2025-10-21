@@ -9,19 +9,21 @@ import Event from './Events/Event'
 import Us from './Hooks/Us'
 import Counter from './Counterapp/Counter'
 import ShortCitcuit from './ShortCircuits/ShortCircuit'
+import Todo from './TodoList/Todo';
 
 const App = () => {
   return (
     <>
-    <Toaster/>
-    <Event/>
+    { <Toaster/>
+    /*<Event/>
     <Us/>
     <Counter/>
     <ShortCitcuit/> 
     <Birthday/> 
     <Useeffect/> 
     <Apifetch/>
-    <ControlledInputs/>
+    <ControlledInputs/> */}
+    <Todo/>
      </>
   )
 }
