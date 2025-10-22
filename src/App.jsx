@@ -13,6 +13,7 @@ import Todo from "./TodoList/Todo";
 import TextGenerator from "./TextGenerator/TextGenerator";
 import ColorGenerator from "./Colorgenerator/ColorGenerator";
 import Accordians from "./Accordians/Accordians";
+import Productmain from "./ProductAPI/Productmain";
 
 const App = () => {
   return (
@@ -31,7 +32,8 @@ const App = () => {
       {/* <Todo/> */}
       {/* <TextGenerator/> */}
       {/* <ColorGenerator/> */}
-      <Accordians />
+      {/* <Accordians /> */}
+      <Productmain />
     </>
   );
 };
