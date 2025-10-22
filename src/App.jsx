@@ -1,35 +1,39 @@
-import React from 'react'
-import Useeffect from './Hooks/Useeffect'
-import Apifetch from './Api Req/Apifetch'
-import ControlledInputs from './Inputs/ControlledInputs'
-import { Toaster } from 'react-hot-toast';
+import React from "react";
+import Useeffect from "./Hooks/Useeffect";
+import Apifetch from "./Api Req/Apifetch";
+import ControlledInputs from "./Inputs/ControlledInputs";
+import { Toaster } from "react-hot-toast";
 
-import Birthday from './Birthday Reminder/Birthday'
-import Event from './Events/Event'
-import Us from './Hooks/Us'
-import Counter from './Counterapp/Counter'
-import ShortCitcuit from './ShortCircuits/ShortCircuit'
-import Todo from './TodoList/Todo';
-import TextGenerator from './TextGenerator/TextGenerator';
-import ColorGenerator from './Colorgenerator/ColorGenerator';
+import Birthday from "./Birthday Reminder/Birthday";
+import Event from "./Events/Event";
+import Us from "./Hooks/Us";
+import Counter from "./Counterapp/Counter";
+import ShortCitcuit from "./ShortCircuits/ShortCircuit";
+import Todo from "./TodoList/Todo";
+import TextGenerator from "./TextGenerator/TextGenerator";
+import ColorGenerator from "./Colorgenerator/ColorGenerator";
+import Accordians from "./Accordians/Accordians";
 
 const App = () => {
   return (
     <>
-    { <Toaster/>
-    /*<Event/>
+      {
+        <Toaster />
+        /*<Event/>
     <Us/>
     <Counter/>
     <ShortCitcuit/> 
     <Birthday/> 
     <Useeffect/> 
     <Apifetch/>
-    <ControlledInputs/> */}
-    {/* <Todo/> */}
-    {/* <TextGenerator/> */}
-    <ColorGenerator/>
-     </>
-  )
-}
+    <ControlledInputs/> */
+      }
+      {/* <Todo/> */}
+      {/* <TextGenerator/> */}
+      {/* <ColorGenerator/> */}
+      <Accordians />
+    </>
+  );
+};
 
-export default App
+export default App;

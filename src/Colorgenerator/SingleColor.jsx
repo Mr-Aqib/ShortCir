@@ -14,7 +14,7 @@ const SingleColor = ({ rgb, indexx, hex }) => {
         <IoCopyOutline
           cursor="pointer"
           onClick={() => {
-            navigator.clipboard.writeText(`#${rgb}`);
+            navigator.clipboard.writeText(`#${hex}`);
             toast.success("Copied Color");
           }}
         />
