@@ -14,6 +14,7 @@ import TextGenerator from "./TextGenerator/TextGenerator";
 import ColorGenerator from "./Colorgenerator/ColorGenerator";
 import Accordians from "./Accordians/Accordians";
 import Productmain from "./ProductAPI/Productmain";
+import Form from "./Form/Form";
 
 const App = () => {
   return (
@@ -33,7 +34,8 @@ const App = () => {
       {/* <TextGenerator/> */}
       {/* <ColorGenerator/> */}
       {/* <Accordians /> */}
-      <Productmain />
+      {/* <Productmain /> */}
+      <Form />
     </>
   );
 };
