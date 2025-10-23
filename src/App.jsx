@@ -15,6 +15,7 @@ import ColorGenerator from "./Colorgenerator/ColorGenerator";
 import Accordians from "./Accordians/Accordians";
 import Productmain from "./ProductAPI/Productmain";
 import Form from "./Form/Form";
+import UseRef from "./Hooks/UseRef";
 
 const App = () => {
   return (
@@ -35,7 +36,8 @@ const App = () => {
       {/* <ColorGenerator/> */}
       {/* <Accordians /> */}
       {/* <Productmain /> */}
-      <Form />
+      {/* <Form /> */}
+      <UseRef />
     </>
   );
 };
