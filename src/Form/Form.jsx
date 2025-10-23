@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import FormCard from "./FormCard";
 
 const Form = () => {
   const [field, setField] = useState({
@@ -10,6 +11,7 @@ const Form = () => {
   });
   const [err, setErr] = useState(false);
   const [data, setData] = useState([]);
+
   const { namee, email, dob, message } = field;
 
   const handleChange = (e) => {
@@ -35,13 +37,15 @@ const Form = () => {
       toast.success("Data Inserted");
     }
   };
-
+  const delData = (id) => {
+    const newData = data.filter((item, index) => index !== id);
+    setData(newData);
+  };
   return (
     <>
       <div
-        className="container-fluid d-flex align-items-center justify-content-center py-5"
+        className="container-fluid flex-column d-flex align-items-center justify-content-center py-5"
         style={{
-          minHeight: "100vh",
           background: "linear-gradient(135deg, #d4f7e6, #e9f7ef)",
         }}
       >
@@ -113,6 +117,31 @@ const Form = () => {
               </button>
             </div>
           </form>
+        </div>
+        <div className="my-3 container">
+          {data.length > 0 ? (
+            <h1 className="text-center display-4 text-danger">
+              User-Information
+            </h1>
+          ) : (
+            <h1 className="text-center display-5 text-danger">
+              No User Added Yet
+            </h1>
+          )}
+          <div className="row gap-4 my-3">
+            {data?.map((items, index) => {
+              return (
+                <>
+                  <FormCard
+                    key={index}
+                    deldata={delData}
+                    {...items}
+                    indexx={index}
+                  />
+                </>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
