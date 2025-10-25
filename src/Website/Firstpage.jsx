@@ -86,7 +86,12 @@ const FirstPage = () => {
             <h4 className="mb-3" style={{ color: "#b3c7ff" }}>
               Menu
             </h4>
-            <IoMenu size={35} color="#b3c7ff" />
+            <IoMenu
+              cursor="pointer"
+              onClick={() => setMenubtn(true)}
+              size={35}
+              color="#b3c7ff"
+            />
           </div>
 
           <div className="text-sec d-flex flex-column gap-3">
@@ -119,15 +124,15 @@ const FirstPage = () => {
         <div className="d-flex flex-column align-items-center justify-content-center py-4">
           <MdTravelExplore
             cursor="pointer"
-            size={70}
+            size={90}
             className="explore-icon"
-            onClick={() => setMenubtn(true)}
           />
           <p className="mt-2 fw-semibold" style={{ color: "#e3e8ff" }}>
             Explore More
           </p>
         </div>
       </div>
+      <MenuPage menubtnn={menubtn} setMenubtnn={setMenubtn} />
       {/* Menu div */}
 
       {/* CSS */}
