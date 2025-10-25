@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
 import { MdTravelExplore } from "react-icons/md";
-
-const MenuUseRef = () => {
+import MenuPage from "./MenuPage";
+const FirstPage = () => {
+  const [menubtn, setMenubtn] = useState(false);
   const [open, setOpen] = useState(false);
 
   return (
@@ -15,7 +16,7 @@ const MenuUseRef = () => {
           color: "#f9f9f9",
           fontFamily: "'Inter', 'Poppins', sans-serif",
         }}
-        className="container-fluid d-flex flex-column"
+        className="position-relative container-fluid d-flex flex-column"
       >
         {/* Header */}
         <div className="p-3 d-flex flex-row align-items-center justify-content-between">
@@ -120,12 +121,14 @@ const MenuUseRef = () => {
             cursor="pointer"
             size={70}
             className="explore-icon"
+            onClick={() => setMenubtn(true)}
           />
           <p className="mt-2 fw-semibold" style={{ color: "#e3e8ff" }}>
             Explore More
           </p>
         </div>
       </div>
+      {/* Menu div */}
 
       {/* CSS */}
       <style jsx>{`
@@ -133,7 +136,7 @@ const MenuUseRef = () => {
         .hover-item:hover {
           background-color: #f1f1f1;
           cursor: pointer;
-          font-weight: 500;
+          //   font-weight: 500;
         }
 
         /* Hover icon effect */
@@ -179,4 +182,4 @@ const MenuUseRef = () => {
   );
 };
 
-export default MenuUseRef;
+export default FirstPage;
