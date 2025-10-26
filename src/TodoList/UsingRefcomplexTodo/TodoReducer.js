@@ -38,4 +38,13 @@ if(action.type=="Date_not_added")
         errorField:"date"
     }
 }
+if(action.type=="Delete_Todo")
+{
+    return {
+        ...state,
+        todo:state.todo.filter((items,index)=>{
+            return items.id!=action.payload
+        })
+    }
+}
 }
