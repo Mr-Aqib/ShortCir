@@ -20,7 +20,7 @@ const MenuPage = ({ setMenubtnn, menubtnn }) => {
         }}
         className="container-fluid position-absolute"
       >
-        <div className="p-4 rounded-5 shadow container-fluid d-flex flex-row align-items-center justify-content-between">
+        <div className="p-4  container-fluid d-flex flex-row align-items-center justify-content-between">
           <h4
             className="display-4 fw-bold menu-title"
             style={{

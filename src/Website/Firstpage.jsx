@@ -19,7 +19,7 @@ const FirstPage = () => {
         className="position-relative container-fluid d-flex flex-column"
       >
         {/* Header */}
-        <div className="p-3 d-flex flex-row align-items-center justify-content-between">
+        <div className="p-4 d-flex flex-row align-items-center justify-content-between">
           <h4
             className="display-4 fw-bold"
             style={{
