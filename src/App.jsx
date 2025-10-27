@@ -22,7 +22,7 @@ import TextGenerator from "./TextGenerator/TextGenerator";
 const App = () => {
   return (
     <>
-      <Toaster />
+      {/* <Toaster />
       <Event />
       <Us />
       <Counter />
@@ -40,7 +40,7 @@ const App = () => {
       <Form />
       <UseRef />
       <Mainpage />
-      <UsereducerTodo />
+      <UsereducerTodo /> */}
       <PropDrilling />
     </>
   );
