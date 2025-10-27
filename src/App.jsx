@@ -17,7 +17,7 @@ import UseRef from "./Hooks/UseRef";
 import Mainpage from "./Website/Mainpage";
 import UsereducerTodo from "./TodoList/UsingRefcomplexTodo/UsereducerTodo";
 import PropDrilling from "./Hooks/UseContext/PropDrilling";
-import TextGenerator from "./TextGenerator/TextGenerator";
+// import TextGenerator from "./TextGenerator/TextGenerator";
 
 const App = () => {
   return (
@@ -34,7 +34,7 @@ const App = () => {
     <ControlledInputs/> */
       }
       {/* <Todo/> */}
-      <TextGenerator />
+      {/* <TextGenerator /> */}
       {/* <ColorGenerator/> */}
       {/* <Accordians /> */}
       {/* <Productmain /> */}
