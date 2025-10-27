@@ -3,7 +3,7 @@ import { db } from "./Generatordb";
 import toast from "react-hot-toast";
 
 const TextGenerator = () => {
-  const [inp, setInp] = useState(null);
+  const [inp, setInp] = useState("");
   const [data, setData] = useState([]);
   const [err, setErr] = useState(false);
 

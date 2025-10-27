@@ -35,7 +35,7 @@ const App = () => {
     <ControlledInputs/> */
       }
       {/* <Todo/> */}
-      {/* <TextGenerator/> */}
+      <TextGenerator />
       {/* <ColorGenerator/> */}
       {/* <Accordians /> */}
       {/* <Productmain /> */}
