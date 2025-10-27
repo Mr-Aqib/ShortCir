@@ -1,7 +1,6 @@
 import React, { createContext, useState } from "react";
 import toast from "react-hot-toast";
 import ListData from "./ListData";
-
 export const dataContext = createContext();
 
 const PropDrilling = () => {
@@ -17,9 +16,9 @@ const PropDrilling = () => {
       setInp("");
     }
   };
-
   const removeData = (id) => {
     const newData = data.filter((items, index) => index !== id);
+
     setData(newData);
   };
 
