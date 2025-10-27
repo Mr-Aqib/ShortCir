@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { dataContext } from "./PropDrilling";
-
+import { dataContext } from "./dataContext";
 const ListDrillData = () => {
   const { data, removeData } = useContext(dataContext);
 

@@ -1,8 +1,8 @@
 import React, { createContext, useState } from "react";
 import toast from "react-hot-toast";
 import ListData from "./ListData";
-export const dataContext = createContext();
-
+import audio from "./audio.mp3";
+import { dataContext } from "./dataContext";
 const PropDrilling = () => {
   const [inp, setInp] = useState("");
   const [data, setData] = useState([]);
@@ -20,6 +20,8 @@ const PropDrilling = () => {
     const newData = data.filter((items, index) => index !== id);
 
     setData(newData);
+    const a = new Audio(audio);
+    a.play();
   };
 
   return (
